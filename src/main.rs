@@ -2,7 +2,7 @@ use std::io;
 
 fn expr(line: &str) -> i32 {
 	let mut digits: [i32; 2] = [0; 2];
-    let mut op: char = '+';
+	let mut op: char = '+';
 	let mut index: usize = 0;
 
 	for s in line.chars() {
@@ -13,9 +13,6 @@ fn expr(line: &str) -> i32 {
 		else
 		if s == '+' || s == '-' {
 			op = s
-		}
-		else {
-			panic!("oops!");
 		}
 	}
 	
